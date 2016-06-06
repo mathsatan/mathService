@@ -24,7 +24,7 @@
                 <td class="rightcol">\(b = \)</td>
                 <td><input name="b" type="text" size="10" maxlength="10" value="1" /></td>
             </tr>
-            <tr><td colspan="2" class="center_button"><input type="submit" name="enter" value="Вперед!"/></td></tr>
+            <tr><td colspan="2" class="center_button"><input type="submit" name="enter" value="<?echo L_SUBMIT?>"/></td></tr>
         </table>
         <input type="hidden" name="operation_type" value="integrate" />
     </form><br>
@@ -41,7 +41,7 @@
                     <option value="3">3</option>
                 </select>
             </tr>
-            <tr><td colspan="2" class="center_button"><input type="submit" name="enter" value="Вперед!"/></td></tr>
+            <tr><td colspan="2" class="center_button"><input type="submit" name="enter" value="<?echo L_SUBMIT?>"/></td></tr>
         </table>
         <input type="hidden" name="operation_type" value="derivative" />
     </form>

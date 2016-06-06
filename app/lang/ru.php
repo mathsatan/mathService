@@ -140,6 +140,8 @@ define ('E_EMAIL_DIDNT_SENT', 'E-mail не отправлен');
 
 // Calculate
 define ('L_BACK', 'Назад');
+define ('L_TIME', 'время');
+define ('L_MSEC', 'мс');
 define ('E_WRONG_RANGE', 'Неверные пределы');
 define ('E_WRONG_ORDER', 'Неверный порядок производной');
 define ('E_WRONG_OPERATION_TYPE', 'Неверный тип операции');

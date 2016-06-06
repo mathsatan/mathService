@@ -57,6 +57,7 @@ class ModelCalculate extends Model {
             $this->RESULT['calc_result']['operation_type'] = 'derivative';
             $this->RESULT['calc_result']['latex_function'] = $this->output[0];
             $this->RESULT['calc_result']['latex_derivative_function'] = $this->output[1];
+            $this->RESULT['calc_result']['order'] = $order;
             $this->RESULT['calc_result']['time'] = $this->output[2];
         }
     }

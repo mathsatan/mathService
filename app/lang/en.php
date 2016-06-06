@@ -140,6 +140,8 @@ define ('E_EMAIL_DIDNT_SENT', 'E-mail didn\'t sent');
 
 // Calculate
 define ('L_BACK', 'Back');
+define ('L_TIME', 'time');
+define ('L_MSEC', 'ms');
 define ('E_WRONG_RANGE', 'Wrong ranges');
 define ('E_WRONG_ORDER', 'Wrong derivative order');
 define ('E_WRONG_OPERATION_TYPE', 'Wrong operation type');

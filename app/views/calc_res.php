@@ -10,8 +10,13 @@ if ($data['calc_result']['operation_type'] == 'integral'){
     echo '<div class="time">time: '.$data['calc_result']['time'].' ms</div><br>';
 }elseif ($data['calc_result']['operation_type'] == 'derivative'){
     echo '$$f(x) = '.$data['calc_result']['latex_function'].'$$<br>';
-    echo '$$\dfrac{\mathrm{d} }{\mathrm{d} x}(f(x)) = '.$data['calc_result']['latex_derivative_function'].'$$<br>';
-    echo '<div class="time">time: '.$data['calc_result']['time'].' ms</div><br>';
+    if ($data['calc_result']['order'] > 1) {
+        echo '$$\frac{\mathrm{d}^'.$data['calc_result']['order'].' }{\mathrm{d} x^'.$data['calc_result']['order'].'}f(x) = '.$data['calc_result']['latex_derivative_function'].'$$<br>';
+    }else{
+        echo '$$\frac{\mathrm{d}}{\mathrm{d} x}f(x) = '.$data['calc_result']['latex_derivative_function'].'$$<br>';
+    }
+
+    echo '<div class="time">'.L_TIME.': '.$data['calc_result']['time'].' '.L_MSEC.'</div><br>';
 }
 echo '<br><a href="/main/load_calc">'.L_BACK.'</a>';
 ?>

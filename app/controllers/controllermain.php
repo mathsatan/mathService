@@ -58,7 +58,7 @@ class ControllerMain extends Controller
         } catch (PDOException $e) {
             $data['message'] = $e->getMessage();
         }
-        $this->view->generate('mainview/calc.htx', 'templateview.php', $data);
+        $this->view->generate('calc.php', 'templateview.php', $data);
     }
 
     public function action_calc() {
